@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Files Accessed</title>
+    <meta charset="utf-8">
+    <link href="/static/bower_components/nvd3/build/nv.d3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+        text {
+            font: 11px sans-serif;
+        }
+
+        svg {
+            display: block;
+        }
+
+        html,
+        body,
+        #chart1,
+        svg {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+        .nvd3-svg{
+            height:60% !important;
+            margin: 0 0 50px 0 !important;
+            padding: 0 0 300px 0 !important;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2> Student Dashboard </h2>
+
+course_id: {{ course_id }}
+
+<ul>
+    <li><a href="/files">File Access</a></li>
+    <li><a href="/grades">Grades</a></li>
+</ul>
+
+
+<script src="/static/bower_components/underscore/underscore-min.js"></script>
+
+
+<script src="/static/bower_components/moment/min/moment.min.js"></script>
+<script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/static/bower_components/angular/angular.min.js"></script>
+<script src="/static/bower_components/d3/d3.min.js" charset="utf-8"></script>
+<script src="/static/bower_components/nvd3/build/nv.d3.min.js"></script>
+<script src="/static/bower_components/angular-nvd3/dist/angular-nvd3.min.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/controllers.js"></script>
+<script src="/static/js/factories.js"></script>
+</body>
+
+</html>
